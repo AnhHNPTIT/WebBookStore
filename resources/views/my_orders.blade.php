@@ -1,7 +1,7 @@
 @extends('layouts.master_home')
 
 @section('title')
-Chi tiết đơn hàng - Nhà sách Thu Hằng
+Chi tiết đơn hàng - Nhà sách Ánh Hoàng
 @endsection
 
 @section('home')

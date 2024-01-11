@@ -1,7 +1,7 @@
 @extends('layouts.master_home')
 
 @section('title')
-Lịch sử đặt hàng - Nhà sách Thu Hằng
+Lịch sử đặt hàng - Nhà sách Ánh Hoàng
 @endsection
 
 @section('home')

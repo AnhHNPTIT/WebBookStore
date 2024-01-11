@@ -1,7 +1,7 @@
 @extends('layouts.master_home')
 
 @section('title')
-Nhà sách Thu Hằng
+Nhà sách Ánh Hoàng
 @endsection
 
 @section('js')
@@ -1335,7 +1335,7 @@ Nhà sách Thu Hằng
                 </p>
                 <div class="em-ads-content">
                     <h4 class="primary em-text-upercase">Đội ngũ nhân viên</h4>
-                    <p>Nhà sách Thu Hằng tự hào khi sở hữu đội ngũ nhân viên hàng đầu tại Việt Nam</p>
+                    <p>Nhà sách Ánh Hoàng tự hào khi sở hữu đội ngũ nhân viên hàng đầu tại Việt Nam</p>
                 </div>
             </div>
         </div><!-- /.em-wrapper-ads-item -->
@@ -1345,7 +1345,7 @@ Nhà sách Thu Hằng
                 </p>
                 <div class="em-ads-content">
                     <h4 class="primary em-text-upercase">Cửa hàng trực tuyến</h4>
-                    <p>Dễ dàng đặt hàng online nhanh chóng trên Nhà sách Thu Hằng thông qua mọi thiết bị</p>
+                    <p>Dễ dàng đặt hàng online nhanh chóng trên Nhà sách Ánh Hoàng thông qua mọi thiết bị</p>
                 </div>
             </div>
         </div><!-- /.em-wrapper-ads-item -->

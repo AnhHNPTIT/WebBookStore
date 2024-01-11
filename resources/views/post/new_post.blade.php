@@ -1,9 +1,5 @@
 @extends('layouts.master_admin') 
 
-@section('controll')
-New Post
-@endsection
-
 @section('content')
 
 <script src="{{ asset("layout_user/plugins/selectize.min.js") }}"></script>

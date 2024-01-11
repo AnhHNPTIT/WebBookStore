@@ -1,7 +1,7 @@
 @extends('layouts.master_home')
 
 @section('title')
-    Giới thiệu - Nhà sách Thu Hằng
+    Giới thiệu - Nhà sách Ánh Hoàng
 @endsection
 
 @section('css')
@@ -22,13 +22,13 @@
                             <div class="" style="text-align : justify; padding: 10px 10px; line-height : 30px;">
                                 <p><strong>VỀ CHÚNG TÔI</strong></p>
 
-                                <p>Nhà sách Thu Hằng - Nhà sách Thu Hằng là nơi chuyên cung cấp các thực phẩm chức năng cho mọi lứa tuổi.</p>
+                                <p>Nhà sách Ánh Hoàng  là nơi chuyên cung cấp các sách cho mọi lứa tuổi.</p>
 
                                 <p>Với đội ngũ nhân viên tư vấn chuyên môn tốt, chúng tôi mong muốn mang lại những sản phẩm tốt, nguồn gốc rõ ràng; những tư vấn hữu ích nhất cho các bạn.</p>
 
                                 <p>Đội ngũ giao hàng chuyên nghiệp, giao hàng nhanh chóng cho bạn những trải nghiệm tốt nhất.</p>
 
-                                <p>Mọi vấn đề thắc mắc, xin liên hệ số điện thoại hotline: 0123 456 789 hoặc gửi thư tới địa chỉ: info.functionalfoodstore@gmail.com</p>
+                                <p>Mọi vấn đề thắc mắc, xin liên hệ số điện thoại hotline: 0963 852 741 hoặc gửi thư tới địa chỉ: nhasachanhhoang@gmail.com</p>
                             </div>
                         </div>
                     </div><!-- /.em-col-main -->

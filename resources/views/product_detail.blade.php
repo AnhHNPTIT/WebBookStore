@@ -4,7 +4,7 @@
 @if(isset($product))
 {{$product->name}}
 @else
-Chi tiết sản phẩm - Nhà sách Thu Hằng
+Chi tiết sản phẩm - Nhà sách Ánh Hoàng
 @endif
 @endsection
 

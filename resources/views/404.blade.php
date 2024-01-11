@@ -1,7 +1,7 @@
 @extends('layouts.master_home')
 
 @section('title')
-    404 Not Found - Nhà sách Thu Hằng
+    404 Not Found - Nhà sách Ánh Hoàng
 @endsection
 
 @section('home')

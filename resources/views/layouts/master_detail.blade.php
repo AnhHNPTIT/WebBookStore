@@ -7,7 +7,7 @@
     <title>
         @yield('title')
     </title>
-    <meta name="description" content="Đến với mọi cửa hàng của Nhà sách Thu Hằng, bạn đều được trải nghiệm và mua sắm những sản phẩm chất lượng cao, uy tín hàng đầu trên thị trường chăm sóc sức khỏe">
+    <meta name="description" content="Đến với mọi cửa hàng của Nhà sách Ánh Hoàng, bạn đều được trải nghiệm và mua sắm những sản phẩm chất lượng cao, uy tín hàng đầu trên thị trường chăm sóc sức khỏe">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="HTMLCooker">
 
@@ -138,9 +138,9 @@
                             </a>
                         </div>
                         <div class="em-logo col-xs-10" style="margin-right: 0px;">
-                            <a href="tel:0123 456 789">
+                            <a href="tel:0963 852 741">
                                 <img src="{{asset('/images/icons/call-2.gif')}}" alt="" style="width: 25px; height: 25px;">
-                                <span style="font-weight:bold; font-size:14px;"><span style="color:#00ab9f;">0123 456 789</span></span>
+                                <span style="font-weight:bold; font-size:14px;"><span style="color:#00ab9f;">0963 852 741</span></span>
                             </a>
                         </div>
                     </div>
@@ -297,9 +297,9 @@
                                         <div id="hotline" class="f-left">
                                             <ul style="margin-bottom: 0px !important;">
                                                 <li class="">
-                                                    <a href="tel:0123 456 789">
+                                                    <a href="tel:0963 852 741">
                                                         <img src="{{asset('/images/icons/call-2.gif')}}" alt="" style="width: 25px; height: 25px;">
-                                                        <span style="font-weight:bold; font-size:14px;"><span>Hotline:</span> <span style="color:#00ab9f;">0123 456 789</span></span>
+                                                        <span style="font-weight:bold; font-size:14px;"><span>Hotline:</span> <span style="color:#00ab9f;">0963 852 741</span></span>
                                                     </a>
                                                 </li>
                                             </ul>
@@ -564,17 +564,17 @@
                                                 </div>
                                                 <p style="text-align : center; color: #ffffff;">
                                                     <a href="{{ url('/') }}">
-                                                        Nhà sách Thu Hằng
+                                                        Nhà sách Ánh Hoàng
                                                     </a>
                                                 </p>
                                                 <p style="text-align : center; color: #ffffff;">
                                                     Giấy phép ĐKKD số 01A8023039 cấp ngày 27 - 12 - 2020
                                                 </p>
                                                 <p style="text-align : center; color: #ffffff;">
-                                                    Phụ trách CM : Hoàng Thị Thu Hằng
+                                                    Phụ trách CM : Hoàng Ngọc Ánh
                                                 </p>
                                                 <p style="text-align : center; color: #ffffff;">
-                                                    Địa chỉ : 18 P. Viên, Đông Ngạc, Bắc Từ Liêm, Hà Nội
+                                                    Địa chỉ : 53 Phạm Thận Duật, phường Mai Dịch, quận Cầu Giấy, TP Hà Nội
                                                 </p>
                                             </div><!-- /.col-sm-4 -->
 
@@ -648,9 +648,9 @@
                                                 </div>
                                                 <ul id="collapse02" class="em-links em-block-content block-info">
                                                     <li class="em-links-item">
-                                                        <a href="tel:0123 456 789">
+                                                        <a href="tel:0963 852 741">
                                                             <img src="{{asset('/images/icons/call-3.gif')}}" alt="" style="width: 40px; height: 40px;">
-                                                            <span style="font-weight:bold; font-size:14px;"><span>Hotline:</span> <span>0123 456 789</span></span>
+                                                            <span style="font-weight:bold; font-size:14px;"><span>Hotline:</span> <span>0963 852 741</span></span>
                                                         </a>
                                                     </li>
                                                     <!-- <style>
@@ -732,7 +732,7 @@
                             <div class="row">
                                 <div class="col-sm-24">
                                     <div class="em-footer-address">
-                                        <address class="f-left">&copy; Bản quyền thuộc về Nhà sách Thu Hằng</address>
+                                        <address class="f-left">&copy; Bản quyền thuộc về Nhà sách Ánh Hoàng</address>
                                     </div>
                                 </div>
                             </div>
@@ -769,7 +769,7 @@
     </script>
 
     <!-- Your customer chat code -->
-    <div class="fb-customerchat" attribution=setup_tool page_id="112898516810168" theme_color="#00ab9f" logged_in_greeting="Xin chào, Nhà sách Thu Hằng có thể giúp gì cho bạn?" logged_out_greeting="Xin chào, Nhà sách Thu Hằng có thể giúp gì cho bạn?">
+    <div class="fb-customerchat" attribution=setup_tool page_id="112898516810168" theme_color="#00ab9f" logged_in_greeting="Xin chào, Nhà sách Ánh Hoàng có thể giúp gì cho bạn?" logged_out_greeting="Xin chào, Nhà sách Ánh Hoàng có thể giúp gì cho bạn?">
     </div>
 </body>
 

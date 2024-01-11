@@ -2,7 +2,7 @@
 
 
 @section('title')
-Đăng nhập - Nhà sách Thu Hằng
+Đăng nhập - Nhà sách Ánh Hoàng
 @endsection
 
 @section('home')

@@ -1,7 +1,7 @@
 @extends('layouts.master_home')
 
 @section('title')
-Phương thức vận chuyển - Nhà sách Thu Hằng
+Phương thức vận chuyển - Nhà sách Ánh Hoàng
 @endsection
 
 @section('css')
@@ -22,7 +22,7 @@ Phương thức vận chuyển - Nhà sách Thu Hằng
                             <div class="" style="text-align : justify; padding: 10px 10px; line-height : 30px;">
                                 <p><strong>PHƯƠNG THỨC VẬN CHUYỂN</strong></p>
 
-                                <p>Hiện nay, Nhà sách Thu Hằng chỉ hỗ trợ giao hàng các đơn hàng trong Hà Nội có giá trị từ 100.000đ trở lên và các đơn hàng ngoại tỉnh có giá trị từ 300.000đ trở lên.</p>
+                                <p>Hiện nay, Nhà sách Ánh Hoàng chỉ hỗ trợ giao hàng các đơn hàng trong Hà Nội có giá trị từ 100.000đ trở lên và các đơn hàng ngoại tỉnh có giá trị từ 300.000đ trở lên.</p>
 
                                 <p>1. Các đơn hàng của quý khách sẽ được Nhân viên tư vấn liên hệ lại để tư vấn cho quý khách. Sau khi tư vấn và xác nhận, đơn hàng sẽ được nhân viên giao hàng giao đến nơi quý khách đặt hàng.</p>
 

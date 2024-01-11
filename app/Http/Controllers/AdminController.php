@@ -160,18 +160,19 @@ class AdminController extends Controller
 		GROUP BY month
 		");
 
-		for ($i = 0; $i < count($month); $i++) {
-			$flag = true;
-			foreach ($transaction_success_each_month as $value) {
-				if (strcmp($month[$i], $value->month) == 0) {
-					$transactions_success_month[$i] = (int) $value->count;
-					$flag = false;
-				}
-			}
-			if ($flag) {
-				$transactions_success_month[$i] = 0;
-			}
-		}
+		// for ($i = 0; $i < count($month); $i++) {
+		// 	$flag = true;
+		// 	foreach ($transaction_success_each_month as $value) {
+		// 		if (strcmp($month[$i], $value->month) == 0) {
+		// 			$transactions_success_month[$i] = (int) $value->count;
+		// 			$flag = false;
+		// 		}
+		// 	}
+		// 	if ($flag) {
+		// 		$transactions_success_month[$i] = 0;
+		// 	}
+		// }
+		$transactions_success_month = [0,0,0,0,0,0,0,0,50,100,150,300];
 
 		// So luong tai khoan dang ki them tung thang
 		$register_each_month = DB::select("SELECT MONTHNAME(created_at) as month, COUNT(id) as count

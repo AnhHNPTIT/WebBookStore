@@ -1,7 +1,7 @@
 @extends('layouts.master_home')
 
 @section('title')
-Đổi mật khẩu - Nhà sách Thu Hằng
+Đổi mật khẩu - Nhà sách Ánh Hoàng
 @endsection
 
 @section('js')

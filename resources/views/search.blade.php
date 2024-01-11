@@ -1,7 +1,7 @@
 @extends('layouts.master_home')
 
 @section('title')
-    Kết quả tìm kiếm - Nhà sách Thu Hằng
+    Kết quả tìm kiếm - Nhà sách Ánh Hoàng
 @endsection
 
 @section('js')

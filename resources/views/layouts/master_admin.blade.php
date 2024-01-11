@@ -5,7 +5,7 @@
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Admin | Nhà sách Thu Hằng</title>
+  <title>Admin | Nhà sách Ánh Hoàng</title>
   <link rel="shortcut icon" type="image" href="{{asset('/images/icons/logo-nha-thuoc-nhi-khoa.png')}}" />
   <!-- Tell the browser to be responsive to screen width -->
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
@@ -199,7 +199,7 @@
                   <img src="{{asset('dist/img/user2-160x160.jpg')}}" class="img-circle" alt="User Image">@endif
 
                   <p>
-                    Nhà sách Thu Hằng
+                    Nhà sách Ánh Hoàng
                     <small>{{\Carbon\Carbon::parse(Auth::guard('admin')->user()->birthday)->format('d-m-Y')}}</small>
                   </p>
                 </li>
@@ -289,6 +289,7 @@
             </ul>
           </li>
 
+          <!--
           <li class="active treeview">
             <a href="#">
               <i class="fa fa-university"></i> <span>Nhóm thông tin</span>
@@ -301,20 +302,22 @@
               <li><a href="/admin/unit"><i class="fa fa-calculator"></i>Đơn vị tính</a></li>
             </ul>
           </li>
-
+          -->
+          
           <li class="active treeview">
             <a href="#">
-              <i class="fa fa-th-large"></i> <span>Thực phẩm chức năng</span>
+              <i class="fa fa-th-large"></i> <span>Sản phẩm</span>
               <span class="pull-right-container">
                 <i class="fa fa-angle-left pull-right"></i>
               </span>
             </a>
             <ul class="treeview-menu">
-              <li><a href="/admin/product"> <i class="fa fa-th"></i>Thực phẩm chức năng</a></li>
-              <!-- <li><a href="/admin/new/product"><i class="fa fa-star"></i> Thêm thực phẩm chức năng </a></li> -->
+              <li><a href="/admin/product"> <i class="fa fa-th"></i>Sản phẩm</a></li>
+              <!-- <li><a href="/admin/new/product"><i class="fa fa-star"></i> Thêm sách </a></li> -->
             </ul>
           </li>
 
+          <!--
           <li class="active treeview">
             <a href="{{ url('/kien-thuc') }}">
               <i class="fa fa-laptop"></i> <span>Kiến thức</span>
@@ -328,6 +331,7 @@
               <li><a href="/admin/post"><i class="fa fa-newspaper-o"></i> Bài viết</a></li>
             </ul>
           </li>
+          -->
 
           @if(Auth::guard('admin')->check())
           @if(Auth::guard('admin')->user()->level == 1)
@@ -367,7 +371,7 @@
       <div class="pull-right hidden-xs">
         <b>Version</b> 2.8.0
       </div>
-      <strong>Copyright &copy; 2023-2024 <a href="">Nhà sách Thu Hằng</a>.</strong> All rights
+      <strong>Copyright &copy; 2023-2024 <a href="">Nhà sách Ánh Hoàng</a>.</strong> All rights
       reserved.
     </footer>
 
@@ -606,49 +610,6 @@
   <script src="{{asset('dist/js/demo.js')}}"></script>
 
   <script src="{{asset('/datatable_js/jquery.dataTables.min.js')}}"></script>
-
-
-  <!-- firebase 15/7/2019-->
-  <!-- The core Firebase JS SDK is always required and must be listed first -->
-  <script src=""></script>
-  <!-- TODO: Add SDKs for Firebase products that you want to use
-     https://firebase.google.com/docs/web/setup#config-web-app -->
-
-  <script src="{{asset('firebase/fb.js')}}"></script>
-
-  <script>
-    var database = firebase.database();
-
-    // get data
-    var lastIndexTwo = 0;
-    var now = new Date();
-    var url = location.protocol + "//" + location.host;
-
-    var ref = firebase.database().ref('notifications');
-
-    ref.on("value", function(snapshot) {
-      var value = snapshot.val();
-      var htmls = [];
-      $.each(value, function(index, value) {
-        if (value) {
-          var ts = new Date(value.created_at);
-          if (ts.getFullYear() == now.getFullYear() && ts.getMonth() == now.getMonth() && ts.getDate() == now.getDate()) {
-            htmls.push('<li>' +
-              '<a href="' + url + value.path + '">' +
-              '<i class="fa fa-shopping-cart text-green"></i>' + value.content +
-              '</a>' +
-              '</li>');
-          }
-        }
-        lastIndexTwo = index;
-      });
-
-      $('#tbody').html(htmls.reverse());
-      $('.count-notifications').html(htmls.length);
-    }, function(error) {
-      console.log("Error: " + error.code);
-    });
-  </script>
 </body>
 
 </html>

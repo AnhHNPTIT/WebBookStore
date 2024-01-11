@@ -4,7 +4,7 @@
 @if(isset($title))
 {{$title}}
 @else
-Kiến thức- Nhà sách Thu Hằng
+Kiến thức- Nhà sách Ánh Hoàng
 @endif
 @endsection
 

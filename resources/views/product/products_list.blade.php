@@ -12,17 +12,17 @@ products List
 		<div class="col-xs-12">
 			<div class="box">
 				<div class="box-header">
-					<h3 class="box-title">Danh sách thực phẩm chức năng</h3>
+					<h3 class="box-title">Danh sách sách</h3>
 				</div>
 				<!-- /.box-header -->
 				<div class="box-body">
 					<div style="margin-bottom: 30px;">
-						<a href="/admin/new/product" data-toggle="modal" class="btn btn-info btn-add">Thêm thực phẩm chức năng</a>
+						<a href="/admin/new/product" data-toggle="modal" class="btn btn-info btn-add">Thêm sách</a>
 					</div>
 					<table id="list-products" class="table table-bordered table-striped" style="margin-top : 10px;">
 						<thead>
 							<tr>
-								<th class="col-sm-2" style="text-align: center;">Tên thực phẩm chức năng</th>
+								<th class="col-sm-2" style="text-align: center;">Tên sách</th>
 								<th class="col-sm-1" style="text-align: center;">Mã</th>
 								<th class="col-sm-1" style="text-align: center;">Phân loại</th>
 								<th class="col-sm-1" style="text-align: center;">Ảnh</th>

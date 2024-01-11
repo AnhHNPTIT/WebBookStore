@@ -1,7 +1,7 @@
 @extends('layouts.master_home')
 
 @section('title')
-    Liên hệ - Nhà sách Thu Hằng
+    Liên hệ - Nhà sách Ánh Hoàng
 @endsection
 
 @section('css')
@@ -19,23 +19,23 @@
                 <div class="row">
                     <div class="em-col-main col-sm-24">
                     
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3723.0148204388124!2d105.77135407416111!3d21.072070280588076!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3134552defbed8e9%3A0x1584f79c805eb017!2sHanoi%20University%20of%20Mining%20and%20Geology!5e0!3m2!1sen!2s!4v1698756624725!5m2!1sen!2s" width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3723.6853363331415!2d105.77561717410543!3d21.045272880608156!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x313454cc4453804f%3A0x46407db329dccc6f!2zNTMgUC4gUGjhuqFtIFRo4bqtbiBEdeG6rXQsIE1haSBE4buLY2gsIEPhuqd1IEdp4bqleSwgSMOgIE7hu5lpLCBWaeG7h3QgTmFt!5e0!3m2!1svi!2s!4v1704983386464!5m2!1svi!2s" width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
                         <div class="row" style="margin-top : 50px; margin-bottom : 50px;">
                             
                             <div class="col-sm-12" style="line-height : 28px; padding-top : 25px;">
                                 <div class="em-maps-wrapper" style="margin-b : 25px; padding-bottom : 25px;">
-                                    <h1>Nhà sách Thu Hằng</h1>
+                                    <h1>Nhà sách Ánh Hoàng</h1>
                                 </div>
 
-                                <address><span class="fa fa-map-marker secondary2">&nbsp;</span>Địa chỉ: 18 P. Viên, Đông Ngạc, Bắc Từ Liêm, Hà Nội </address>
+                                <address><span class="fa fa-map-marker secondary2">&nbsp;</span>Địa chỉ: 53 Phạm Thận Duật, phường Mai Dịch, quận Cầu Giấy, TP Hà Nội </address>
                                 
-                                <p class="em-phone"><span class="fa fa-user-md secondary2">&nbsp;</span>Phụ trách chuyên môn: <span class="primary">Hoàng Thị Thu Hằng</span>
+                                <p class="em-phone"><span class="fa fa-user-md secondary2">&nbsp;</span>Phụ trách chuyên môn: <span class="primary">Hoàng Ngọc Ánh</span>
                                 </p>
 
-                                <p class="em-phone"><span class="fa fa-phone secondary2">&nbsp;</span>Điện thoại: <span class="primary"> 0123 456 789</span>
+                                <p class="em-phone"><span class="fa fa-phone secondary2">&nbsp;</span>Điện thoại: <span class="primary"> 0963 852 741</span>
                                 </p>
                                 
-                                <p class="em-email"><span class="fa fa-envelope secondary2">&nbsp;</span>Email: <span class="secondary2">info.functionalfoodstore@gmail.com</span>
+                                <p class="em-email"><span class="fa fa-envelope secondary2">&nbsp;</span>Email: <span class="secondary2">nhasachanhhoang@gmail.com</span>
                                 </p>
                             </div><!-- /.col-sm-12 -->
 

@@ -1,7 +1,7 @@
 @extends('layouts.master_home')
 
 @section('title')
-Thanh toán - Nhà sách Thu Hằng
+Thanh toán - Nhà sách Ánh Hoàng
 @endsection
 
 @section('css')

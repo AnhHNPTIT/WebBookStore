@@ -20,7 +20,7 @@ Transaction Detail
           <div class="row">
             <div class="col-xs-12">
               <h2 class="page-header">
-                <i class="fa fa-globe"></i> Nhà sách Thu Hằng
+                <i class="fa fa-globe"></i> Nhà sách Ánh Hoàng
                 <small class="pull-right">
                   Ngày đặt hàng:
                   @if(isset($transaction))
@@ -36,10 +36,10 @@ Transaction Detail
             <div class="col-sm-4 invoice-col">
               Từ
               <address>
-                <strong>Nhà sách Thu Hằng</strong><br>
-                18 P. Viên, Đông Ngạc, Bắc Từ Liêm, Hà Nội<br>
+                <strong>Nhà sách Ánh Hoàng</strong><br>
+                53 Phạm Thận Duật, phường Mai Dịch, quận Cầu Giấy, TP Hà Nội<br>
                 Điện thoại: 0978.478.178<br>
-                Email: info.functionalfoodstore@gmail.com
+                Email: nhasachanhhoang@gmail.com
               </address>
             </div>
             <!-- /.col -->

@@ -1,7 +1,7 @@
 @extends('layouts.master_home')
 
 @section('title')
-Chính sách bảo mật - Nhà sách Thu Hằng
+Chính sách bảo mật - Nhà sách Ánh Hoàng
 @endsection
 
 @section('css')

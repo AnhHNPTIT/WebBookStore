@@ -26,7 +26,7 @@ New Product
 		</div>
 		<div class="col-xs-12">
 				<div class="box-header">
-					<h3 class="box-title">Thêm thực phẩm chức năng</h3>
+					<h3 class="box-title">Thêm sách</h3>
 				</div>
 				<!-- /.box-header -->
 				<div class="box-body">

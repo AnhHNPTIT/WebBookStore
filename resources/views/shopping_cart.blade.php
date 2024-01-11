@@ -1,7 +1,7 @@
 @extends('layouts.master_home')
 
 @section('title')
-Giỏ hàng - Nhà sách Thu Hằng
+Giỏ hàng - Nhà sách Ánh Hoàng
 @endsection
 
 @section('js')
