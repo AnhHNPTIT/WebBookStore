@@ -43,6 +43,7 @@ services:
     volumes:
       - ./:/var/www
       - ./docker-compose/nginx:/etc/nginx/conf.d/
+      - ./docker-compose/nginx/ssl:/etc/nginx/ssl
     networks:
       - wbs
 networks:
