@@ -13,8 +13,8 @@ services:
     working_dir: /var/www/
     volumes:
       - ./:/var/www
-    networks:
-      - wbs
+    # networks:
+    #   - wbs
   db:
     image: mysql:8.0
     container_name: dbwbs
@@ -31,8 +31,8 @@ services:
     ports:
       - "3306:3306"
     command: --bind-address=0.0.0.0
-    networks:
-      - wbs
+    # networks:
+    #   - wbs
   nginx:
     image: nginx:alpine
     container_name: nginxwbs
@@ -44,8 +44,8 @@ services:
       - ./:/var/www
       - ./docker-compose/nginx/:/etc/nginx/conf.d/
       - ./docker-compose/ssl:/etc/nginx/ssl
-    networks:
-      - wbs
-networks:
-  wbs:
-    driver: bridge
+#     networks:
+#       - wbs
+# networks:
+#   wbs:
+#     driver: bridge
