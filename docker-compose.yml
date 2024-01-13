@@ -1,13 +1,13 @@
 version: "3.7"
 services:
   app:
+    image: webbookstore
     build:
       # args:
       #   user: youraccount
       #   uid: 1000
       context: ./
       dockerfile: Dockerfile
-    image: webbookstore
     container_name: appwbs
     restart: unless-stopped
     working_dir: /var/www/
@@ -44,8 +44,8 @@ services:
       - "443:443"
     volumes:
       - ./:/var/www
-      - ./docker-compose/nginx:/etc/nginx/conf.d/
-      - ./docker-compose/nginx/ssl:/etc/nginx/ssl
+      - ./docker-compose/nginx/:/etc/nginx/conf.d/
+      - ./docker-compose/ssl:/etc/nginx/ssl
     networks:
       - wbs
 networks:
