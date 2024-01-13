@@ -15,7 +15,6 @@ services:
       - ./:/var/www
     ports:
       - "8080:8080"
-    command: --bind-address=0.0.0.0
     networks:
       - wbs
   db:
