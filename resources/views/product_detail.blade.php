@@ -51,9 +51,11 @@ Chi tiết sản phẩm - Nhà sách Ánh Hoàng
                                                         <p style="margin-top : 10px;">Mã sản phẩm : {{$product->code}}</p>
                                                     </div>
 
+                                                    <!--
                                                     <div>
                                                         <p style="margin-top : 10px;">Nhà sản xuất : {{$product->manufacturer_name}}</p>
                                                     </div>
+                                                    -->
 
                                                     <div class="price-box" style="margin-top : 30px;">
                                                         @if($product->price > $product->price_sale)
@@ -75,6 +77,7 @@ Chi tiết sản phẩm - Nhà sách Ánh Hoàng
                                                     </div>
 
                                                     <div class="short-description" style="margin-top : 20px;">
+                                                        <!--
                                                         <div class="sku" style="color: #777; font-size: 16px;">
                                                             @if(strlen($product->description) > 500)
                                                             {!!substr($product->description, 0, 500)!!}...
@@ -82,6 +85,7 @@ Chi tiết sản phẩm - Nhà sách Ánh Hoàng
                                                             {!!$product->description!!}
                                                             @endif
                                                         </div>
+                                                        -->
 
                                                         @if($product->quantity > 0)
                                                         <div style="width:100px; padding : 3px 3px; background:#6df31a; color:#fff; font-weight:bold; font-size:12px; text-transform:uppercase; text-align:center;">
@@ -137,50 +141,14 @@ Chi tiết sản phẩm - Nhà sách Ánh Hoàng
                                                     <div class="box-collateral-content" style="text-align:justify; line-height:30px;">
                                                         <div class="std">
                                                             <strong>
-                                                                <span>1. Mô tả sản phẩm: </span>
+                                                                <span>Mô tả sản phẩm: </span>
                                                             </strong>
                                                             <p>{!! $product->description !!}</p>
-                                                        </div>
-                                                        <div class="std">
-                                                            <strong>
-                                                                <span>2. Thành phần: </span>
-                                                            </strong>
-                                                            <p>{!! $product->active !!}</p>
-                                                        </div>
-                                                        <div class="std">
-                                                            <strong>
-                                                                <span>3. Công dụng: </span>
-                                                            </strong>
-                                                            <p>{!! $product->effect !!}</p>
-                                                        </div>
-                                                        <div class="std">
-                                                            <strong>
-                                                                <span>4. Đối tượng sử dụng: </span>
-                                                            </strong>
-                                                            <p>{!! $product->object !!}</p>
-                                                            <br />
-                                                        </div>
-                                                        <div class="std">
-                                                            <strong>
-                                                                <span>5. Cách sử dụng: </span>
-                                                            </strong>
-                                                            <p>{!! $product->frequence !!}</p>
-                                                        </div>
-                                                        <div class="std">
-                                                            <strong>
-                                                                <span>6. Quy cách đóng gói: </span>
-                                                            </strong>
-                                                            <p>{!! $product->packed !!}</p>
-                                                        </div>
-                                                        <div class="std">
-                                                            <strong>
-                                                                <span>7. Bảo quản: </span>
-                                                            </strong>
-                                                            <p>{!! $product->maintain !!}</p>
                                                         </div>
                                                     </div>
                                                 </div><!-- /.box-collateral -->
 
+                                                <!--
                                                 <div class="box-collateral  em-line-01">
                                                     <div class="em-block-title">
                                                         <h2>Nhà sản xuất</h2>
@@ -241,15 +209,16 @@ Chi tiết sản phẩm - Nhà sách Ánh Hoàng
                                                                             </div>
 
                                                                         </div>
-                                                                    </div><!-- /.item -->
+                                                                    </div>
                                                                     @endforeach
                                                                     @endif
-                                                                </div><!-- /.products-grid -->
+                                                                </div>
                                                                 @endif
-                                                            </div><!-- /.products-grid -->
-                                                        </div><!-- /#em-related -->
+                                                            </div>
+                                                        </div>
                                                     </div>
-                                                </div><!-- /.box-collateral -->
+                                                </div>
+                                                -->
 
                                             </div><!-- /.em-details-tabs-content -->
                                         </div><!-- /.em-details-tabs -->

@@ -619,6 +619,7 @@ Danh mục sản phẩm - Nhà sách Ánh Hoàng
 </div>
 </div><!-- /.menuleft -->
 
+<!--
 <div class="em-line-01 block block-layered-nav">
 
     <div class="em-block-title" style="text-align : center;">
@@ -641,6 +642,7 @@ Danh mục sản phẩm - Nhà sách Ánh Hoàng
             </form>
         </ul>
     </div>
+-->
     <!-- brand checkbox-->
 
     <style>

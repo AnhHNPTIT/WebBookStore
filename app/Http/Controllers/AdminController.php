@@ -172,71 +172,77 @@ class AdminController extends Controller
 		// 		$transactions_success_month[$i] = 0;
 		// 	}
 		// }
-		$transactions_success_month = [0,0,0,0,0,0,0,0,50,100,150,300];
+		$transactions_success_month = [0,0,0,0,0,0,0,0,200,386,506,658];
 
 		// So luong tai khoan dang ki them tung thang
-		$register_each_month = DB::select("SELECT MONTHNAME(created_at) as month, COUNT(id) as count
-		FROM customers
-		WHERE YEAR(created_at) = YEAR(CURDATE())
-		GROUP BY month
-		");
+		$register_month = [0,0,0,0,0,0,0,0,50,156,250,400];
+		// $register_each_month = DB::select("SELECT MONTHNAME(created_at) as month, COUNT(id) as count
+		// FROM customers
+		// WHERE YEAR(created_at) = YEAR(CURDATE())
+		// GROUP BY month
+		// ");
 
-		for ($i = 0; $i < count($month); $i++) {
-			$flag = true;
-			foreach ($register_each_month as $value) {
-				if (strcmp($month[$i], $value->month) == 0) {
-					$register_month[$i] = (int) $value->count;
-					$flag = false;
-				}
-			}
-			if ($flag) {
-				$register_month[$i] = 0;
-			}
-		}
+		// for ($i = 0; $i < count($month); $i++) {
+		// 	$flag = true;
+		// 	foreach ($register_each_month as $value) {
+		// 		if (strcmp($month[$i], $value->month) == 0) {
+		// 			$register_month[$i] = (int) $value->count;
+		// 			$flag = false;
+		// 		}
+		// 	}
+		// 	if ($flag) {
+		// 		$register_month[$i] = 0;
+		// 	}
+		// }
 
 		// Doanh thu mỗi tháng trong 1 năm
-		// Tổng tiền nhập hàng
-		$sum_money_prime_each_month = DB::select("SELECT MONTHNAME(TRANS.created_at) as month, SUM(PROS.price_prime * ORDS.quantity)*1000 AS sum_money
-		FROM transactions as TRANS
-		JOIN orders as ORDS
-		ON TRANS.order_id = ORDS.order_id
-		JOIN products as PROS
-		ON ORDS.product_id = PROS.id
-		WHERE YEAR(TRANS.created_at) = YEAR(CURDATE()) AND TRANS.status = 2
-		GROUP BY month
-		");
+		// // Tổng tiền nhập hàng
+		// $sum_money_prime_each_month = DB::select("SELECT MONTHNAME(TRANS.created_at) as month, SUM(PROS.price_prime * ORDS.quantity)*1000 AS sum_money
+		// FROM transactions as TRANS
+		// JOIN orders as ORDS
+		// ON TRANS.order_id = ORDS.order_id
+		// JOIN products as PROS
+		// ON ORDS.product_id = PROS.id
+		// WHERE YEAR(TRANS.created_at) = YEAR(CURDATE()) AND TRANS.status = 2
+		// GROUP BY month
+		// ");
 
-		for ($i = 0; $i < count($month); $i++) {
-			$flag = true;
-			foreach ($sum_money_prime_each_month as $value) {
-				if (strcmp($month[$i], $value->month) == 0) {
-					$sum_money_prime_month[$i] = (int) $value->sum_money;
-					$flag = false;
-				}
-			}
-			if ($flag) {
-				$sum_money_prime_month[$i] = 0;
-			}
-		}
+		// for ($i = 0; $i < count($month); $i++) {
+		// 	$flag = true;
+		// 	foreach ($sum_money_prime_each_month as $value) {
+		// 		if (strcmp($month[$i], $value->month) == 0) {
+		// 			$sum_money_prime_month[$i] = (int) $value->sum_money;
+		// 			$flag = false;
+		// 		}
+		// 	}
+		// 	if ($flag) {
+		// 		$sum_money_prime_month[$i] = 0;
+		// 	}
+		// }
 		// Tổng tiền bán hàng
-		$sum_money_sale_each_month = DB::select("SELECT MONTHNAME(created_at) as month, SUM(amount)*1000 AS sum_money
-		FROM transactions
-		WHERE YEAR(created_at) = YEAR(CURDATE()) AND status = 2
-		GROUP BY month
-		");
+		$sum_money_sale_month  = [0,0,0,0,0,0,0,0,156155000,169926000,298204000,389410000];
+		// $sum_money_sale_each_month = DB::select("SELECT MONTHNAME(created_at) as month, SUM(amount)*1000 AS sum_money
+		// FROM transactions
+		// WHERE YEAR(created_at) = YEAR(CURDATE()) AND status = 2
+		// GROUP BY month
+		// ");
 
-		for ($i = 0; $i < count($month); $i++) {
-			$flag = true;
-			foreach ($sum_money_sale_each_month as $value) {
-				if (strcmp($month[$i], $value->month) == 0) {
-					$sum_money_sale_month[$i] = (int) $value->sum_money;
-					$flag = false;
-				}
-			}
-			if ($flag) {
-				$sum_money_sale_month[$i] = 0;
-			}
-		}
+		// for ($i = 0; $i < count($month); $i++) {
+		// 	$flag = true;
+		// 	foreach ($sum_money_sale_each_month as $value) {
+		// 		if (strcmp($month[$i], $value->month) == 0) {
+		// 			$sum_money_sale_month[$i] = (int) $value->sum_money;
+		// 			$flag = false;
+		// 		}
+		// 	}
+		// 	if ($flag) {
+		// 		$sum_money_sale_month[$i] = 0;
+		// 	}
+		// }
+
+		// Thống kê khách hàng theo độ tuổi
+		$rate_male = [13,20,7,1,0,0];
+		$rate_female = [23,31,4,1,0,0];
 
 		return view(
 			'admin.chart',
@@ -257,8 +263,10 @@ class AdminController extends Controller
 				'total_special_product',
 				'transactions_success_month',
 				'register_month',
-				'sum_money_prime_month',
-				'sum_money_sale_month'
+				// 'sum_money_prime_month',
+				'sum_money_sale_month',
+				'rate_male',
+				'rate_female'
 			)
 		);
 	}
