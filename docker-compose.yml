@@ -2,9 +2,9 @@ version: "3.7"
 services:
   app:
     build:
-      args:
-        user: root
-        uid: 1000
+      # args:
+      #   user: youraccount
+      #   uid: 1000
       context: ./
       dockerfile: Dockerfile
     image: webbookstore
