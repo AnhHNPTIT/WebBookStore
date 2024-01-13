@@ -13,8 +13,6 @@ services:
     working_dir: /var/www/
     volumes:
       - ./:/var/www
-    ports:
-      - "8080:8080"
     networks:
       - wbs
   db:
@@ -40,7 +38,7 @@ services:
     container_name: nginxwbs
     restart: unless-stopped
     ports:
-      - "80:80"
+      - "8000:80"
       - "443:443"
     volumes:
       - ./:/var/www
