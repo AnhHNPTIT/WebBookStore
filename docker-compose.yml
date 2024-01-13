@@ -3,21 +3,21 @@ services:
   app:
     build:
       args:
-        user: [current-user]
+        user: canhdominich
         uid: 1000
       context: ./
       dockerfile: Dockerfile
-    image: [image-name]
-    container_name: [container-name]
+    image: webbookstore
+    container_name: appwbs
     restart: unless-stopped
     working_dir: /var/www/
     volumes:
       - ./:/var/www
     networks:
-      - [network-name]
+      - wbs
   db:
     image: mysql:8.0
-    container_name: [db-container-name]
+    container_name: dbwbs
     restart: unless-stopped
     environment:
       MYSQL_DATABASE: ${DB_DATABASE}
@@ -29,18 +29,18 @@ services:
     volumes:
       - ./docker-compose/mysql:/docker-entrypoint-initdb.d
     networks:
-      - [network-name]
+      - wbs
   nginx:
     image: nginx:alpine
-    container_name: [nginx-container-name]
+    container_name: nginxwbs
     restart: unless-stopped
     ports:
-      - 8000:80
+      - 9000:80
     volumes:
       - ./:/var/www
       - ./docker-compose/nginx:/etc/nginx/conf.d/
     networks:
-      - [network-name]
+      - wbs
 networks:
-  [network-name]:
+  wbs:
     driver: bridge
