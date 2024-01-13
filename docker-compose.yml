@@ -15,7 +15,6 @@ services:
       - ./:/var/www
     ports:
       - "8080:8080"
-    command: php artisan serve --port=8080
     networks:
       - wbs
   db:
