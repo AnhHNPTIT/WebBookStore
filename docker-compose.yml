@@ -48,4 +48,3 @@ services:
       - wbs-app
 networks:
   wbs-app:
-    external: true
