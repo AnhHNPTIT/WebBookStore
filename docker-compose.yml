@@ -34,19 +34,20 @@ services:
     command: --bind-address=0.0.0.0
     networks:
       - wbs-app
-      
+
   nginx:
     image: nginx:alpine
     container_name: nginxwbs
     restart: unless-stopped
     ports:
-      - 8000:80
+      - 80:80
     volumes:
       - ./:/var/www
       - ./docker-compose/nginx/conf.d/:/etc/nginx/conf.d/
       - ./docker-compose/ssl:/etc/nginx/ssl
     networks:
       - wbs-app
+      
 networks:
   wbs-app:
     driver: bridge
