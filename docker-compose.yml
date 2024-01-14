@@ -3,9 +3,9 @@ services:
   app:
     image: webbookstore
     build:
-      # args:
-      #   user: youraccount
-      #   uid: 1000
+      args:
+        user: sammy
+        uid: 1000
       context: ./
       dockerfile: Dockerfile
     container_name: appwbs
