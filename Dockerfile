@@ -3,6 +3,9 @@ FROM php:8.2-fpm
 ARG user
 ARG uid
 
+# Set working directory
+WORKDIR /var/www
+
 # Install system dependencies
 RUN apt-get update && apt-get install -y \
     git \
@@ -24,7 +27,6 @@ RUN useradd -G www-data,root -u $uid -d /home/$user $user
 RUN mkdir -p /home/$user/.composer && \
     chown -R $user:$user /home/$user
 
-# Set working directory
-WORKDIR /var/www
+RUN chown -R www-data:www-data /var/www
 
 USER $user
