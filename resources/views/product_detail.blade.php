@@ -1,13 +1,5 @@
 @extends('layouts.master_detail')
 
-@section('title')
-@if(isset($product))
-{{$product->name}}
-@else
-Chi tiết sản phẩm - Nhà sách Ánh Hoàng
-@endif
-@endsection
-
 @section('js')
 <script type="text/javascript" src="{{asset('home/js/sweetalert.min.js')}}"></script>
 @endsection
@@ -51,12 +43,6 @@ Chi tiết sản phẩm - Nhà sách Ánh Hoàng
                                                         <p style="margin-top : 10px;">Mã sản phẩm : {{$product->code}}</p>
                                                     </div>
 
-                                                    <!--
-                                                    <div>
-                                                        <p style="margin-top : 10px;">Nhà sản xuất : {{$product->manufacturer_name}}</p>
-                                                    </div>
-                                                    -->
-
                                                     <div class="price-box" style="margin-top : 30px;">
                                                         @if($product->price > $product->price_sale)
                                                         <p class="old-price">
@@ -69,9 +55,6 @@ Chi tiết sản phẩm - Nhà sách Ánh Hoàng
                                                         <p class="special-price">
                                                             <span class="price" content="60" id="product-price-182-emprice-e28d8be0787e9d8ae65c6afe74f8df0a" style="color: #00ab9f;">
                                                                 {{number_format($product->price_sale*1000 ,0 ,'.' ,'.')}} VND
-                                                            </span>
-                                                            <span>
-                                                                /{{$product->unit_name}}
                                                             </span>
                                                         </p>
                                                     </div>
@@ -147,78 +130,6 @@ Chi tiết sản phẩm - Nhà sách Ánh Hoàng
                                                         </div>
                                                     </div>
                                                 </div><!-- /.box-collateral -->
-
-                                                <!--
-                                                <div class="box-collateral  em-line-01">
-                                                    <div class="em-block-title">
-                                                        <h2>Nhà sản xuất</h2>
-                                                    </div>
-                                                    <div class="box">
-                                                        <div id="em-related" class="block-content">
-                                                            <div class="std">
-                                                                <strong>
-                                                                    <span>1. Nhà sản xuất: {!! $product->manufacturer_name !!}</span>
-                                                                </strong>
-                                                            </div>
-                                                            <div class="products-grid mini-products-list em-related-slider " id="block-related" style="margin-top : 20px;">
-                                                                @if(isset($related_products) && !$related_products->isEmpty())
-                                                                <div class="std">
-                                                                    <strong>
-                                                                        <span>2. Sản phẩm cùng nhà sản xuất:</span>
-                                                                    </strong>
-                                                                </div>
-
-                                                                <div class="products-grid mini-products-list em-related-slider " id="block-related">
-                                                                    @if(isset($related_products))
-                                                                    @foreach($related_products as $item)
-                                                                    <div class="item" style="min-height:350px; height : 350px; width:180px; margin-top : 30px;">
-                                                                        <div class="product-item" style="height:100%;">
-                                                                            <a href="{{ url('/san-pham/'.$item->slug) }}" class="product-image">
-                                                                                @if($item->price_sale < $item->price)
-                                                                                    <ul class="productlabels_icons">
-                                                                                        @if(floor(($item->price - $item->price_sale)/($item->price)*100) >= 15)
-                                                                                        <li class="label hot">
-                                                                                            <p>
-                                                                                                Hot
-                                                                                            </p>
-                                                                                        </li>
-                                                                                        @else
-                                                                                        <li class="label sale">
-                                                                                            <p>
-                                                                                                Sale
-                                                                                            </p>
-                                                                                        </li>
-                                                                                        @endif
-                                                                                        <li class="label special">
-                                                                                            <p>
-                                                                                                <span>{{floor(($item->price - $item->price_sale)/($item->price)*100)}}%</span> </p>
-                                                                                        </li>
-                                                                                    </ul>
-                                                                                    @endif
-                                                                                    <img class="em-img-lazy img-responsive" src="{{asset('images/'.$item->image)}}" alt="{{$item->name}}" style="width:100%; height:204px;" /> </a>
-                                                                            <div class="product-details product-shop">
-                                                                                <p class="product-name">
-                                                                                    <a href="/san-pham/{{$item->slug}}"> {{$item->name}} </a>
-                                                                                </p>
-
-                                                                                <div class="price-box" itemscope>
-                                                                                    <span class="regular-price" id="product-price-185-related">
-                                                                                        <span class="price">{{number_format($item->price_sale*1000 ,0 ,'.' ,'.')}} VND</span>
-                                                                                    </span>
-                                                                                </div>
-                                                                            </div>
-
-                                                                        </div>
-                                                                    </div>
-                                                                    @endforeach
-                                                                    @endif
-                                                                </div>
-                                                                @endif
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                -->
 
                                             </div><!-- /.em-details-tabs-content -->
                                         </div><!-- /.em-details-tabs -->

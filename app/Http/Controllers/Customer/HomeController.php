@@ -124,18 +124,18 @@ class HomeController extends Controller
         $product = DB::table('products')
             ->select(
                 'products.*',
-                'manufacturers.name as manufacturer_name',
-                'units.name as unit_name'
+                // 'manufacturers.name as manufacturer_name',
+                // 'units.name as unit_name'
             )
-            ->join('manufacturers', 'manufacturers.id', '=', 'products.manufacturer_id')
-            ->join('units', 'units.id', '=', 'products.unit_id')
+            // ->join('manufacturers', 'manufacturers.id', '=', 'products.manufacturer_id')
+            // ->join('units', 'units.id', '=', 'products.unit_id')
             ->where('products.slug', $slug)
             ->where('products.status', 1)
             ->first();
         if (isset($product)) {
-            $related_products = Product::where('manufacturer_id', $product->manufacturer_id)
-                ->where('id', '!=', $product->id)->where('status', 1)
-                ->take(12)->get();
+            // $related_products = Product::where('manufacturer_id', $product->manufacturer_id)
+            //     ->where('id', '!=', $product->id)->where('status', 1)
+            //     ->take(12)->get();
 
             if ($product->product_category_id == 1) {
                 $suggest_products = Product::where('product_category_id', 1)
@@ -151,7 +151,8 @@ class HomeController extends Controller
                     ->where('id', '!=', $product->id)->where('status', 1)->get();
             }
 
-            return view('product_detail', compact('product', 'related_products', 'suggest_products'));
+            // return view('product_detail', compact('product', 'related_products', 'suggest_products'));
+            return view('product_detail', compact('product', 'suggest_products'));
         }
     }
 
