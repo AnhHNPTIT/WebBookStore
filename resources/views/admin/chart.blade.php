@@ -267,25 +267,25 @@ Trang chủ
     var pieChart       = new Chart(pieChartCanvas)
     var PieData        = [
         {
-            value    : {{$total_vitamin_product}},
+            value    : {{$total_1st_product}},
             color    : '#2298FE',
             highlight: '#2298FE',
             label    : 'Sách thiếu nhi'
         },
         {
-            value    : {{$total_energy_product}},
+            value    : {{$total_2nd_product}},
             color    : '#FE22F4',
             highlight: '#FE22F4',
             label    : 'Sách chữ ký'
         },
         {
-            value    : {{$total_fiber_product}},
+            value    : {{$total_3rd_product}},
             color    : '#44F801',
             highlight: '#44F801',
             label    : 'Sách giới hạn'
         },
         {
-            value    : {{$total_special_product}},
+            value    : {{$total_4th_product}},
             color    : '#F89201 ',
             highlight: '#F89201 ',
             label    : 'Sách khác'

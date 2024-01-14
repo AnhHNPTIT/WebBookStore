@@ -95,8 +95,8 @@ Nhà sách Ánh Hoàng
 
                                                                 <div class="padding-top20">
                                                                     <ul class="em-catalog-navigation vertical">
-                                                                        @if(isset($menu_vitamin_products_asc))
-                                                                        @foreach($menu_vitamin_products_asc as $i => $item)
+                                                                        @if(isset($menu_1st_products_asc))
+                                                                        @foreach($menu_1st_products_asc as $i => $item)
                                                                         @if(0 <= $i && $i < 8) <li class="level0 nav-1">
                                                                             @if(strlen($item->name) < 30) <a href="{{url('san-pham/'.$item->slug)}}"> <span>{{$item->name}}</span> </a>
                                                                                 @else
@@ -117,8 +117,8 @@ Nhà sách Ánh Hoàng
                                     <li class="menu-item-text menu-item-depth-3  ">
                                         <div class="padding-top20">
                                             <ul class="em-catalog-navigation vertical">
-                                                @if(isset($menu_vitamin_products_asc))
-                                                @foreach($menu_vitamin_products_asc as $i => $item)
+                                                @if(isset($menu_1st_products_asc))
+                                                @foreach($menu_1st_products_asc as $i => $item)
                                                 @if(8 <= $i) <li class="level0 nav-1 first">
                                                     @if(strlen($item->name) < 30) <a href="{{url('san-pham/'.$item->slug)}}"> <span>{{$item->name}}</span> </a>
                                                         @else
@@ -153,8 +153,8 @@ Nhà sách Ánh Hoàng
 
                                                     <div class="padding-top20">
                                                         <ul class="em-catalog-navigation vertical">
-                                                            @if(isset($menu_energy_products_asc))
-                                                            @foreach($menu_energy_products_asc as $i => $item)
+                                                            @if(isset($menu_2nd_products_asc))
+                                                            @foreach($menu_2nd_products_asc as $i => $item)
                                                             @if(0 <= $i && $i < 8) <li class="level0 nav-1">
                                                                 @if(strlen($item->name) < 30) <a href="{{url('san-pham/'.$item->slug)}}"> <span>{{$item->name}}</span> </a>
                                                                     @else
@@ -175,8 +175,8 @@ Nhà sách Ánh Hoàng
                             <li class="menu-item-text menu-item-depth-3  ">
                                 <div class="padding-top20">
                                     <ul class="em-catalog-navigation vertical">
-                                        @if(isset($menu_energy_products_asc))
-                                        @foreach($menu_energy_products_asc as $i => $item)
+                                        @if(isset($menu_2nd_products_asc))
+                                        @foreach($menu_2nd_products_asc as $i => $item)
                                         @if(8 <= $i) <li class="level0 nav-1 first">
                                             @if(strlen($item->name) < 30) <a href="{{url('san-pham/'.$item->slug)}}"> <span>{{$item->name}}</span> </a>
                                                 @else
@@ -210,8 +210,8 @@ Nhà sách Ánh Hoàng
 
                                             <div class="padding-top20">
                                                 <ul class="em-catalog-navigation vertical">
-                                                    @if(isset($menu_fiber_products_asc))
-                                                    @foreach($menu_fiber_products_asc as $i => $item)
+                                                    @if(isset($menu_3rd_products_asc))
+                                                    @foreach($menu_3rd_products_asc as $i => $item)
                                                     @if(0 <= $i && $i < 8) <li class="level0 nav-1">
                                                         @if(strlen($item->name) < 30) <a href="{{url('san-pham/'.$item->slug)}}"> <span>{{$item->name}}</span> </a>
                                                             @else
@@ -232,8 +232,8 @@ Nhà sách Ánh Hoàng
                     <li class="menu-item-text menu-item-depth-3  ">
                         <div class="padding-top20">
                             <ul class="em-catalog-navigation vertical">
-                                @if(isset($menu_fiber_products_asc))
-                                @foreach($menu_fiber_products_asc as $i => $item)
+                                @if(isset($menu_3rd_products_asc))
+                                @foreach($menu_3rd_products_asc as $i => $item)
                                 @if(8 <= $i) <li class="level0 nav-1 first">
                                     @if(strlen($item->name) < 30) <a href="{{url('san-pham/'.$item->slug)}}"> <span>{{$item->name}}</span> </a>
                                         @else
@@ -267,8 +267,8 @@ Nhà sách Ánh Hoàng
 
                                     <div class="padding-top20">
                                         <ul class="em-catalog-navigation vertical">
-                                            @if(isset($menu_special_products_asc))
-                                            @foreach($menu_special_products_asc as $i => $item)
+                                            @if(isset($menu_4th_products_asc))
+                                            @foreach($menu_4th_products_asc as $i => $item)
                                             @if(0 <= $i && $i < 8) <li class="level0 nav-1">
                                                 @if(strlen($item->name) < 30) <a href="{{url('san-pham/'.$item->slug)}}"> <span>{{$item->name}}</span> </a>
                                                     @else
@@ -289,8 +289,8 @@ Nhà sách Ánh Hoàng
             <li class="menu-item-text menu-item-depth-3  ">
                 <div class="padding-top20">
                     <ul class="em-catalog-navigation vertical">
-                        @if(isset($menu_special_products_asc))
-                        @foreach($menu_special_products_asc as $i => $item)
+                        @if(isset($menu_4th_products_asc))
+                        @foreach($menu_4th_products_asc as $i => $item)
                         @if(8 <= $i) <li class="level0 nav-1 first">
                             @if(strlen($item->name) < 30) <a href="{{url('san-pham/'.$item->slug)}}"> <span>{{$item->name}}</span> </a>
                                 @else
@@ -361,8 +361,8 @@ Nhà sách Ánh Hoàng
                                                     <div class="emcatalog-desktop-6">
                                                         <div class="products-grid">
 
-                                                            @if(isset($new_vitamin_products))
-                                                            @foreach($new_vitamin_products as $item)
+                                                            @if(isset($new_1st_products))
+                                                            @foreach($new_1st_products as $item)
                                                             <div class="item last" style="  ">
 
                                                                 @if($item->price_sale < $item->price)
@@ -544,8 +544,8 @@ Nhà sách Ánh Hoàng
                                                     <div class="emcatalog-desktop-6">
                                                         <div class="products-grid ">
 
-                                                            @if(isset($new_energy_products))
-                                                            @foreach($new_energy_products as $item)
+                                                            @if(isset($new_2nd_products))
+                                                            @foreach($new_2nd_products as $item)
                                                             <div class="item last" style="  ">
 
                                                                 @if($item->price_sale < $item->price)
@@ -726,8 +726,8 @@ Nhà sách Ánh Hoàng
                                                     <div class="emcatalog-desktop-6">
                                                         <div class="products-grid ">
 
-                                                            @if(isset($new_fiber_products))
-                                                            @foreach($new_fiber_products as $item)
+                                                            @if(isset($new_3rd_products))
+                                                            @foreach($new_3rd_products as $item)
                                                             <div class="item last" style="  ">
 
                                                                 @if($item->price_sale < $item->price)
@@ -898,8 +898,8 @@ Nhà sách Ánh Hoàng
                                             <div class="emcatalog-desktop-6">
                                                 <div class="products-grid ">
 
-                                                    @if(isset($new_special_products))
-                                                    @foreach($new_special_products as $item)
+                                                    @if(isset($new_4th_products))
+                                                    @foreach($new_4th_products as $item)
                                                     <div class="item last" style="  ">
 
                                                         @if($item->price_sale < $item->price)

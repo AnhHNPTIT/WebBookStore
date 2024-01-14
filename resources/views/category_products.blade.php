@@ -395,8 +395,8 @@ Danh mục sản phẩm - Nhà sách Ánh Hoàng
 
                                                                         <div class="padding-top20">
                                                                             <ul class="em-catalog-navigation vertical">
-                                                                                @if(isset($menu_vitamin_products_asc))
-                                                                                @foreach($menu_vitamin_products_asc as $i => $item)
+                                                                                @if(isset($menu_1st_products_asc))
+                                                                                @foreach($menu_1st_products_asc as $i => $item)
                                                                                 @if(0 <= $i && $i < 8) <li class="level0 nav-1">
                                                                                     @if(strlen($item->name) < 30) <a href="{{url('san-pham/'.$item->slug)}}"> <span>{{$item->name}}</span> </a>
                                                                                         @else
@@ -417,8 +417,8 @@ Danh mục sản phẩm - Nhà sách Ánh Hoàng
                                             <li class="menu-item-text menu-item-depth-3  ">
                                                 <div class="padding-top20">
                                                     <ul class="em-catalog-navigation vertical">
-                                                        @if(isset($menu_vitamin_products_asc))
-                                                        @foreach($menu_vitamin_products_asc as $i => $item)
+                                                        @if(isset($menu_1st_products_asc))
+                                                        @foreach($menu_1st_products_asc as $i => $item)
                                                         @if(8 <= $i) <li class="level0 nav-1 first">
                                                             @if(strlen($item->name) < 30) <a href="{{url('san-pham/'.$item->slug)}}"> <span>{{$item->name}}</span> </a>
                                                                 @else
@@ -453,8 +453,8 @@ Danh mục sản phẩm - Nhà sách Ánh Hoàng
 
                                                             <div class="padding-top20">
                                                                 <ul class="em-catalog-navigation vertical">
-                                                                    @if(isset($menu_energy_products_asc))
-                                                                    @foreach($menu_energy_products_asc as $i => $item)
+                                                                    @if(isset($menu_2nd_products_asc))
+                                                                    @foreach($menu_2nd_products_asc as $i => $item)
                                                                     @if(0 <= $i && $i < 8) <li class="level0 nav-1">
                                                                         @if(strlen($item->name) < 30) <a href="{{url('san-pham/'.$item->slug)}}"> <span>{{$item->name}}</span> </a>
                                                                             @else
@@ -475,8 +475,8 @@ Danh mục sản phẩm - Nhà sách Ánh Hoàng
                                     <li class="menu-item-text menu-item-depth-3  ">
                                         <div class="padding-top20">
                                             <ul class="em-catalog-navigation vertical">
-                                                @if(isset($menu_energy_products_asc))
-                                                @foreach($menu_energy_products_asc as $i => $item)
+                                                @if(isset($menu_2nd_products_asc))
+                                                @foreach($menu_2nd_products_asc as $i => $item)
                                                 @if(8 <= $i) <li class="level0 nav-1 first">
                                                     @if(strlen($item->name) < 30) <a href="{{url('san-pham/'.$item->slug)}}"> <span>{{$item->name}}</span> </a>
                                                         @else
@@ -510,8 +510,8 @@ Danh mục sản phẩm - Nhà sách Ánh Hoàng
 
                                                     <div class="padding-top20">
                                                         <ul class="em-catalog-navigation vertical">
-                                                            @if(isset($menu_fiber_products_asc))
-                                                            @foreach($menu_fiber_products_asc as $i => $item)
+                                                            @if(isset($menu_3rd_products_asc))
+                                                            @foreach($menu_3rd_products_asc as $i => $item)
                                                             @if(0 <= $i && $i < 8) <li class="level0 nav-1">
                                                                 @if(strlen($item->name) < 30) <a href="{{url('san-pham/'.$item->slug)}}"> <span>{{$item->name}}</span> </a>
                                                                     @else
@@ -532,8 +532,8 @@ Danh mục sản phẩm - Nhà sách Ánh Hoàng
                             <li class="menu-item-text menu-item-depth-3  ">
                                 <div class="padding-top20">
                                     <ul class="em-catalog-navigation vertical">
-                                        @if(isset($menu_fiber_products_asc))
-                                        @foreach($menu_fiber_products_asc as $i => $item)
+                                        @if(isset($menu_3rd_products_asc))
+                                        @foreach($menu_3rd_products_asc as $i => $item)
                                         @if(8 <= $i) <li class="level0 nav-1 first">
                                             @if(strlen($item->name) < 30) <a href="{{url('san-pham/'.$item->slug)}}"> <span>{{$item->name}}</span> </a>
                                                 @else
@@ -567,8 +567,8 @@ Danh mục sản phẩm - Nhà sách Ánh Hoàng
 
                                             <div class="padding-top20">
                                                 <ul class="em-catalog-navigation vertical">
-                                                    @if(isset($menu_special_products_asc))
-                                                    @foreach($menu_special_products_asc as $i => $item)
+                                                    @if(isset($menu_4th_products_asc))
+                                                    @foreach($menu_4th_products_asc as $i => $item)
                                                     @if(0 <= $i && $i < 8) <li class="level0 nav-1">
                                                         @if(strlen($item->name) < 30) <a href="{{url('san-pham/'.$item->slug)}}"> <span>{{$item->name}}</span> </a>
                                                             @else
@@ -589,8 +589,8 @@ Danh mục sản phẩm - Nhà sách Ánh Hoàng
                     <li class="menu-item-text menu-item-depth-3  ">
                         <div class="padding-top20">
                             <ul class="em-catalog-navigation vertical">
-                                @if(isset($menu_special_products_asc))
-                                @foreach($menu_special_products_asc as $i => $item)
+                                @if(isset($menu_4th_products_asc))
+                                @foreach($menu_4th_products_asc as $i => $item)
                                 @if(8 <= $i) <li class="level0 nav-1 first">
                                     @if(strlen($item->name) < 30) <a href="{{url('san-pham/'.$item->slug)}}"> <span>{{$item->name}}</span> </a>
                                         @else
@@ -742,53 +742,53 @@ Danh mục sản phẩm - Nhà sách Ánh Hoàng
     </div>
 
     @if($title == "Sách thiếu nhi")
-    @if(isset($price_sale_min_vitamin_product) && isset($price_sale_max_vitamin_product))
+    @if(isset($price_sale_min_1st_product) && isset($price_sale_max_1st_product))
     <div class="block-content" style="text-align : center;">
-        <input id="price-slider-amount" type="text" value="" class="slider form-control" data-slider-min="{{ $price_sale_min_vitamin_product*1000 }}" data-slider-max="{{ $price_sale_max_vitamin_product*1000 }}" data-slider-step="1" <?php if (isset($min_price) && isset($max_price)) { ?> data-slider-value="[<?php echo $min_price * 1000; ?>,<?php echo $max_price * 1000; ?>]" <?php } else { ?> data-slider-value="[20000,30000]" <?php } ?> data-slider-orientation="horizontal" data-slider-selection="before" data-slider-tooltip="show" data-slider-id="aqua">
+        <input id="price-slider-amount" type="text" value="" class="slider form-control" data-slider-min="{{ $price_sale_min_1st_product*1000 }}" data-slider-max="{{ $price_sale_max_1st_product*1000 }}" data-slider-step="1" <?php if (isset($min_price) && isset($max_price)) { ?> data-slider-value="[<?php echo $min_price * 1000; ?>,<?php echo $max_price * 1000; ?>]" <?php } else { ?> data-slider-value="[20000,30000]" <?php } ?> data-slider-orientation="horizontal" data-slider-selection="before" data-slider-tooltip="show" data-slider-id="aqua">
         <div class="" style="font-size : 12px;">
             Giá từ:
-            <span class="from">{{number_format($price_sale_min_vitamin_product*1000 ,0 ,'.' ,'.')}} VND</span>
+            <span class="from">{{number_format($price_sale_min_1st_product*1000 ,0 ,'.' ,'.')}} VND</span>
             —
-            <span class="to">{{number_format($price_sale_max_vitamin_product*1000 ,0 ,'.' ,'.')}} VND</span>
+            <span class="to">{{number_format($price_sale_max_1st_product*1000 ,0 ,'.' ,'.')}} VND</span>
         </div>
         <button type="button" class="button btn-price-slider" style="margin-top : 15px; font-size : 13px;">Lọc theo giá</button>
     </div>
     @endif
     @elseif($title == "Sách chữ ký")
-    @if(isset($price_sale_min_energy_product) && isset($price_sale_max_energy_product))
+    @if(isset($price_sale_min_2nd_product) && isset($price_sale_max_2nd_product))
     <div class="block-content" style="text-align : center;">
-        <input id="price-slider-amount" type="text" value="" class="slider form-control" data-slider-min="{{ $price_sale_min_energy_product*1000 }}" data-slider-max="{{ $price_sale_max_energy_product*1000 }}" data-slider-step="1" <?php if (isset($min_price) && isset($max_price)) { ?> data-slider-value="[<?php echo $min_price * 1000; ?>,<?php echo $max_price * 1000; ?>]" <?php } else { ?> data-slider-value="[20000,30000]" <?php } ?> data-slider-orientation="horizontal" data-slider-selection="before" data-slider-tooltip="show" data-slider-id="aqua">
+        <input id="price-slider-amount" type="text" value="" class="slider form-control" data-slider-min="{{ $price_sale_min_2nd_product*1000 }}" data-slider-max="{{ $price_sale_max_2nd_product*1000 }}" data-slider-step="1" <?php if (isset($min_price) && isset($max_price)) { ?> data-slider-value="[<?php echo $min_price * 1000; ?>,<?php echo $max_price * 1000; ?>]" <?php } else { ?> data-slider-value="[20000,30000]" <?php } ?> data-slider-orientation="horizontal" data-slider-selection="before" data-slider-tooltip="show" data-slider-id="aqua">
         <div class="" style="font-size : 12px;">
             Giá từ:
-            <span class="from">{{number_format($price_sale_min_energy_product*1000 ,0 ,'.' ,'.')}} VND</span>
+            <span class="from">{{number_format($price_sale_min_2nd_product*1000 ,0 ,'.' ,'.')}} VND</span>
             —
-            <span class="to">{{number_format($price_sale_max_energy_product*1000 ,0 ,'.' ,'.')}} VND</span>
+            <span class="to">{{number_format($price_sale_max_2nd_product*1000 ,0 ,'.' ,'.')}} VND</span>
         </div>
         <button type="button" class="button btn-price-slider" style="margin-top : 15px; font-size : 13px;">Lọc theo giá</button>
     </div>
     @endif
     @elseif($title == "Sách giới hạn")
-    @if(isset($price_sale_min_fiber_product) && isset($price_sale_max_fiber_product))
+    @if(isset($price_sale_min_3rd_product) && isset($price_sale_max_3rd_product))
     <div class="block-content" style="text-align : center;">
-        <input id="price-slider-amount" type="text" value="" class="slider form-control" data-slider-min="{{ $price_sale_min_fiber_product*1000 }}" data-slider-max="{{ $price_sale_max_fiber_product*1000 }}" data-slider-step="1" <?php if (isset($min_price) && isset($max_price)) { ?> data-slider-value="[<?php echo $min_price * 1000; ?>,<?php echo $max_price * 1000; ?>]" <?php } else { ?> data-slider-value="[20000,30000]" <?php } ?> data-slider-orientation="horizontal" data-slider-selection="before" data-slider-tooltip="show" data-slider-id="aqua">
+        <input id="price-slider-amount" type="text" value="" class="slider form-control" data-slider-min="{{ $price_sale_min_3rd_product*1000 }}" data-slider-max="{{ $price_sale_max_3rd_product*1000 }}" data-slider-step="1" <?php if (isset($min_price) && isset($max_price)) { ?> data-slider-value="[<?php echo $min_price * 1000; ?>,<?php echo $max_price * 1000; ?>]" <?php } else { ?> data-slider-value="[20000,30000]" <?php } ?> data-slider-orientation="horizontal" data-slider-selection="before" data-slider-tooltip="show" data-slider-id="aqua">
         <div class="" style="font-size : 12px;">
             Giá từ:
-            <span class="from">{{number_format($price_sale_min_fiber_product*1000 ,0 ,'.' ,'.')}} VND</span>
+            <span class="from">{{number_format($price_sale_min_3rd_product*1000 ,0 ,'.' ,'.')}} VND</span>
             —
-            <span class="to">{{number_format($price_sale_max_fiber_product*1000 ,0 ,'.' ,'.')}} VND</span>
+            <span class="to">{{number_format($price_sale_max_3rd_product*1000 ,0 ,'.' ,'.')}} VND</span>
         </div>
         <button type="button" class="button btn-price-slider" style="margin-top : 15px; font-size : 13px;">Lọc theo giá</button>
     </div>
     @endif
     @elseif($title == "Sách khác")
-    @if(isset($price_sale_min_special_product) && isset($price_sale_max_special_product))
+    @if(isset($price_sale_min_4th_product) && isset($price_sale_max_4th_product))
     <div class="block-content" style="text-align : center;">
-        <input id="price-slider-amount" type="text" value="" class="slider form-control" data-slider-min="{{ $price_sale_min_special_product*1000 }}" data-slider-max="{{ $price_sale_max_special_product*1000 }}" data-slider-step="1" <?php if (isset($min_price) && isset($max_price)) { ?> data-slider-value="[<?php echo $min_price * 1000; ?>,<?php echo $max_price * 1000; ?>]" <?php } else { ?> data-slider-value="[20000,30000]" <?php } ?> data-slider-orientation="horizontal" data-slider-selection="before" data-slider-tooltip="show" data-slider-id="aqua">
+        <input id="price-slider-amount" type="text" value="" class="slider form-control" data-slider-min="{{ $price_sale_min_4th_product*1000 }}" data-slider-max="{{ $price_sale_max_4th_product*1000 }}" data-slider-step="1" <?php if (isset($min_price) && isset($max_price)) { ?> data-slider-value="[<?php echo $min_price * 1000; ?>,<?php echo $max_price * 1000; ?>]" <?php } else { ?> data-slider-value="[20000,30000]" <?php } ?> data-slider-orientation="horizontal" data-slider-selection="before" data-slider-tooltip="show" data-slider-id="aqua">
         <div class="" style="font-size : 12px;">
             Giá từ:
-            <span class="from">{{number_format($price_sale_min_special_product*1000 ,0 ,'.' ,'.')}} VND</span>
+            <span class="from">{{number_format($price_sale_min_4th_product*1000 ,0 ,'.' ,'.')}} VND</span>
             —
-            <span class="to">{{number_format($price_sale_max_special_product*1000 ,0 ,'.' ,'.')}} VND</span>
+            <span class="to">{{number_format($price_sale_max_4th_product*1000 ,0 ,'.' ,'.')}} VND</span>
         </div>
         <button type="button" class="button btn-price-slider" style="margin-top : 15px; font-size : 13px;">Lọc theo giá</button>
     </div>
