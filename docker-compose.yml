@@ -38,8 +38,7 @@ services:
     container_name: nginxwbs
     restart: unless-stopped
     ports:
-      - "80:80"
-      - "443:443"
+      - 8000:80
     volumes:
       - ./:/var/www
       - ./docker-compose/nginx/:/etc/nginx/conf.d/
@@ -48,3 +47,4 @@ services:
       - wbs-app
 networks:
   wbs-app:
+    driver: bridge
