@@ -15,6 +15,7 @@ services:
       - ./:/var/www
     networks:
       - wbs-app
+
   db:
     image: mysql:8.0
     container_name: dbwbs
@@ -33,6 +34,7 @@ services:
     command: --bind-address=0.0.0.0
     networks:
       - wbs-app
+      
   nginx:
     image: nginx:alpine
     container_name: nginxwbs
